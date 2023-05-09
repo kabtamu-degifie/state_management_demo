@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stt_mgt/models/product.dart';
+import 'package:stt_mgt/providers/product.dart';
 import 'package:stt_mgt/providers/products.dart';
 import 'package:stt_mgt/widgets/product-grid.dart';
 import 'package:stt_mgt/widgets/product-item.dart';
