@@ -19,9 +19,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => Products(),
-      child: MaterialApp(home: Scaffold(body: ProductGrid())),
-    );
+    return MultiProvider(
+        providers: [ChangeNotifierProvider(create: (context) => Products())],
+        child: MaterialApp(home: Scaffold(body: ProductGrid())));
   }
 }
