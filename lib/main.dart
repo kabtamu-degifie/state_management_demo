@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stt_mgt/providers/product.dart';
-import 'package:stt_mgt/providers/products.dart';
-import 'package:stt_mgt/widgets/product-grid.dart';
-import 'package:stt_mgt/widgets/product-item.dart';
+import './widgets/product_grid.dart';
+import '../providers/products.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +19,6 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MultiProvider(
         providers: [ChangeNotifierProvider(create: (context) => Products())],
-        child: MaterialApp(home: Scaffold(body: ProductGrid())));
+        child: const MaterialApp(home: Scaffold(body: ProductGrid())));
   }
 }

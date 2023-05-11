@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stt_mgt/providers/products.dart';
-import 'package:stt_mgt/widgets/product-item.dart';
+import '../providers/products.dart';
+import '../widgets/product_item.dart';
 
 class ProductGrid extends StatelessWidget {
+  const ProductGrid({super.key});
+
   @override
   Widget build(BuildContext context) {
     final productsData = Provider.of<Products>(context);
