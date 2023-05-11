@@ -1,4 +1,4 @@
-# stt_mgt
+# App state management demo
 
 A new Flutter project.
 
